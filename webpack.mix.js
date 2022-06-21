@@ -18,7 +18,7 @@ mix.js('resources/js/app.js', 'public/js')
     mix.copyDirectory( './node_modules/@fortawesome/fontawesome-free/webfonts/*', './public/fonts/font-awesome' );
 
     // frontoffice
-    mix.js('resources/js/front.js', 'public/js')
+mix.js('resources/js/front.js', 'public/js')
     .sass('resources/sass/front.scss', 'public/css').options({ 
         processCssUrls: false 
     });
