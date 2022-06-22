@@ -26,3 +26,7 @@ Route::middleware('auth')
     ->group(function () { 
         Route::get('/', 'HomeController@index')->name('home_admin'); 
     });
+
+Route::get("{any?}", function() {
+    return view('guest.home_guest');
+})->where("any", ".*");
